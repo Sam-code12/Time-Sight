@@ -221,7 +221,7 @@ li{
 }
 
 form{ ,
-border-color: linear-gradient(to right, blue, cyan);
+border: 1px solid white;
 height: 200px;
   width: 300px;
   text-align: center;
