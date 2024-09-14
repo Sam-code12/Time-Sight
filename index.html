@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>TIME SIGHT</title>
+         <link rel = "icon" 
+         type = "image/jpeg" 
+         href = "name.jpeg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Time Sight web" />
+  <meta name="description" content="Time SIGHT for the world" />
+   <meta name="author" content="Stephen Sam" />
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">TIME <span>SIGHT</span></h1>
+    <div id="timer" class="col"></div>
+    <script>
+      var d = new Date();
+      var clockTimer = setInterval(function() {
+        d.setSeconds(d.getSeconds() + 1);
+        document.getElementById("timer").innerHTML = (d.getHours() % 12 || 12) + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + ":" + (d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds()) + " " + (d.getHours() < 12 ? "AM" : "PM");
+      }, 1000);
+    </script>
+  </header>
+  <h2 class="mis">Welcome to Time Sight</h2>
+  <h3> Time Sight: Your Quick and Easy Date Checker </h3>
+
+<p class="text"><strong>Overview:</strong> TimeSight is a groundbreaking time management solution that's changing the way businesses and individuals manage their time. Our innovative platform is designed to help you optimize your schedules, streamline tasks, and boost productivity like never before. With its advanced features and user-friendly interface, TimeSight empowers users to take control of their time and achieve their goals with ease.</p>
+    <p id="date-time" style="display:none;" class="time"></p>
+    <div class="bot">
+      <button onclick="var dt = document.getElementById('date-time'); dt.style.display = dt.style.display == 'none' ? 'block' : 'none'; dt.innerHTML = Date(); this.textContent = this.textContent == 'Show Date and Time' ? 'Hide Date and Time' : 'Show Date and Time'" class="god">Show Date and Time</button>
+    </div>
+<h2 class="mil">Our Stop Watch</h2>
+<p class="pal">A sleek and user-friendly digital stopwatch designed for precision timing. With a simple and intuitive interface, this stopwatch allows users to easily start, stop, and reset the timer with the touch of a button. Perfect for athletes, coaches, and individuals looking to track time with accuracy and ease. The stopwatch features a clear digital display, showing hours, minutes, seconds, and milliseconds, making it ideal for tracking time in various activities such as sports, cooking, or work tasks. Additionally, the stopwatch has a compact design, making it easy to take on-the-go, and a durable construction, ensuring long-lasting use.</p>
+
+    <div class="las">
+      <div class="stopwatch">
+        <h1 id="display">00:00:00</h1>
+        <button id="start" class="mar">Start</button>
+        <button id="stop" class="mar">Stop</button>
+        <button id="restart" class="mar">Restart</button>
+      </div>
+    </div>
+    <dl class="abu">
+<dt>2025 Calendar Now out</dt>
+
+<dd>Stay organized and focused throughout the year with our simple and effective 2025 calendar. Designed with a clean layout and clear typography, this calendar provides a straightforward way to plan your days, weeks, and months. With its easy-to-read font and layout, you'll be able to quickly and easily keep track of your schedule and appointments.
+</dd>
+
+<dt>Features:</dt>
+<li>12 months of calendar pages, from January to December 2025</li>
+<li> Easy-to-read font and layout</li>
+
+<dd class="lap">This calendar is perfect for anyone looking for a no-frills way to stay organized. Whether you're a student, professional, or simply someone who likes to stay on top of their schedule, this calendar is a great choice. Its simple design makes it easy to use and understand, and its compact size makes it easy to take with you on-the-go.</dd>
+</dl>    
+    <p class="man"> Are you Willing to Unlock 2025 Calender? Then scroll down to unlock it..</p>
+    <div class="main">
+      <form action="new.html">
+        <input type="text" name="name" id="name" placeholder=" Your Name" required><br><br>
+        <input type="submit" value="UNLOCK NOW">
+      </form>
+    </div>
+          <h2 class="fol">FOLLOW US ON:</h2>
+          <p class="pui">Facebook to have latest updates about time Sight!!</p>
+                         <div class="icon">
+<a href="https://www.facebook.com/profile.php?id=61565596659657" target="_blank" class="fa fa-facebook"></a>
+</div>
+                 <footer>
+                         <p class="ui">&copy; 2024 Time space.All rights reserved.</p>
+</footer>   
+ <script>
+      let seconds = 0;
+      let minutes = 0;
+      let hours = 0;
+      let stopwatchTimer;
+      document.getElementById("start").addEventListener("click", start);
+      document.getElementById("stop").addEventListener("click", stop);
+      document.getElementById("restart").addEventListener("click", restart);
+      function start() {
+        try {
+          stopwatchTimer = setInterval(() => {
+            seconds++;
+            if (seconds === 60) {
+              minutes++;
+              seconds = 0;
+            }
+            if (minutes === 60) {
+              hours++;
+              minutes = 0;
+            }
+            document.getElementById("display").innerText = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+          }, 1000);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      function stop() {
+        clearInterval(stopwatchTimer);
+      }
+      function restart() {
+        clearInterval(stopwatchTimer);
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        document.getElementById("display").innerText = "00:00:00";
+      }
+      function pad(time) {
+        return time.toString().padStart(2, "0");
+      }
+    </script>
+  </body>
+</html>

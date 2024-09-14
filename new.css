@@ -1,0 +1,217 @@
+
+body {
+  background-image: url('gas.jpeg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+header{
+  background-color: navy;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid white;
+}
+
+
+.logo{
+  margin: 0;
+  padding: 0;
+  font-size: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-left: 10px;
+  
+}
+
+span{
+   color: cyan;%
+}
+.god{
+    border-radius: 10px;
+}
+
+
+
+.col{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: helvetica;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 27px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#lol{
+    background: mediumblue;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    width: 150px;
+    margin-left: 10px;
+}
+.con{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.time{
+    color: white;
+    font-size: 15px;
+    text-align: center;;
+}
+
+.bot{
+    text-align: center;
+}
+
+.god{
+    height: 40px;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    background: linear-gradient(to right, mediumblue, cyan);
+    font-weight: bold;;
+}
+.whi{
+    color: white;
+  font-size: 18px; 
+    margin-left: 20px;
+}
+.jil{
+  text-align: right;
+  margin-top: 10px;
+}
+.kil{
+  height: 40px;
+  width: 200px;
+  background: blue;
+  color: white;
+  font-size: 19px;
+  margin-right: 20px;align-self: 
+}
+.cent{
+display: grid;
+place-items: center;
+}
+
+table{
+  width: 90%;
+  border-radius: 10px;
+  border: 2px solid white;
+ box-shadow: 0px  0px 10px rgba(0,255,255,0.5); 
+  margin-top: 20px;
+  background: rgb(0, 0,0, 0.5);
+  color: white;
+  height: 300px;
+
+  
+  }
+  
+.man{
+    background: darkblue;
+    }
+
+th, td{
+  border: none;
+  padding: 8px;
+  text-align: center;
+  font-size: 15px; 
+ 
+}
+
+.fol{
+    color: white;
+    text-align: center;
+}
+.icon{
+    text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: mediumblue;;
+  color: white;
+  margin-bottom: 20px;
+  
+}
+
+
+
+footer{
+    background: blue;
+    color: white;
+    margin-bottom: 0;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.pui{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+.ui{
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+@media only screen and (min-width: 300px) and (max-width: 435px) {
+
+.logo{
+    font-size: 20px;
+}
+
+table{
+    width: 80%;
+}
+th, td{
+    font-size: 12px;
+}
+
+.col{
+    font-size: 19px;
+}
+}
+
