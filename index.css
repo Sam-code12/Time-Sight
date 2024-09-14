@@ -221,8 +221,8 @@ li{
 }
 
 form{ ,
-border: 1px solid white;
-height: 200px;
+  border: 2px solid cyan;
+  height: 200px;
   width: 300px;
   text-align: center;
   border-radius: 10px;
